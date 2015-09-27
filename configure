@@ -3969,7 +3969,9 @@ fi
 # Default compiler flags
 #-------------------------------------------------------------------------
 
-CFLAGS="-Wall -Werror -D__NO_INLINE__ -mcmodel=medany -O2 -std=gnu99 -Wno-unused -Wno-attributes -fno-delete-null-pointer-checks"
+CFLAGS="-m32 -Wa,-march=RV32IMAFDXcam -Wall -Werror -D__NO_INLINE__ -mcmodel=medany -O2 -std=gnu99 -Wno-unused -Wno-attributes -fno-delete-null-pointer-checks"
+
+LDFLAGS="-m32 -Wa,-march=RV32IMAFDXcam"
 
 LIBS="-lgcc"
 
